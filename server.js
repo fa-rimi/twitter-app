@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
   res.send("Working!");
 });
 
-// ====================== View Routes
+// ======================== View Routes
 
 //index
 app.get("/tweets", async (req, res) => {
@@ -107,8 +107,6 @@ app.put("/api/tweets/:id", async (req, res) => {
     console.log(error);
   }
 });
-
-//add comment
 
 app.put("/api/tweets/add-comment/:id", async (req, res) => {
   const { id } = req.params;
